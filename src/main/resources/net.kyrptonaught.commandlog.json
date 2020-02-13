@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.kyrptonaught.commandlog.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ChatSentMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

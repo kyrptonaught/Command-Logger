@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "commandlog",
+  "version": "1.0.0",
+  "name": "Command Logger",
+  "description": "Logs commands sent by you",
+  "authors": [
+    "kyrptonaught"
+  ],
+  "contact": {
+    "homepage": "https://github.com/kyrptonaught/commandlog",
+    "sources": "https://github.com/kyrptonaught/commandlog"
+  },
+  "license": "MIT",
+  "icon": "assets/commandlog/icon.png",
+  "environment": "client",
+  "mixins": [
+    {
+      "config": "net.kyrptonaught.commandlog.json"
+    }
+  ],
+  "entrypoints": {
+    "client": [
+      "net.kyrptonaught.commandlog.CommandLogMod"
+    ],
+    "modmenu": [
+      "net.kyrptonaught.commandlog.config.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "custom": {
+    "modmenu:clientsideOnly": true
+  }
+
+}
